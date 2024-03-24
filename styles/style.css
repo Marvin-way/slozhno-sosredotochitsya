@@ -1,4 +1,45 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
+.header {
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+  background-image: url(../images/cover-image.png);
+  height: 100vh;
+}
+
+.header__theme-menu-list {
+  display: flex;
+  flex-direction: row;
+  color: #ff0070;
+  gap: 10px;
+}
+
+.header__theme-menu-button {
+  width: 70px;
+  background-color: transparent;
+  font-size: 18px;
+  line-height: 18px;
+}
+
+.header__lamp {
+  text-transform: uppercase; 
+  position: absolute;
+  right: 48px;
+  top: 30px;
+  color: #ff0070;
+}
+.header__lamp::after {
+  display: block;
+  content: "";
+  position: relative;
+  top: -15px;
+  left: 35px;
+  background-color: #ff0070;
+  border-radius: 50%;
+  height: 9px;
+  width: 9px;
+  filter: drop-shadow(0px 0px 5px #ff0070);
+}
 
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
